@@ -20,7 +20,7 @@ public class PodcastIntentHandler implements RequestHandler {
         //TODO Colocar texto
         String speechText = "<p>Que tal experimentar <lang xml:lang=\"en-US\">o podcast</lang> PodProgramar?</p>" +
                 "<p>É um <lang xml:lang=\"en-US\">podcast</lang> apresentado por desenvolvedoras focado em programação, " +
-                "notícias e histórias, tudo com o toque feminino, e com bastante diversidade." +
+                "notícias e histórias, tudo com o toque feminino, e com bastante diversidade.</p>" +
                 "<p>Tente dizer Alexa, abra o <lang xml:lang=\"en-US\">Spotify</lang> podprogramar.</p>";
 
         return input.getResponseBuilder()
