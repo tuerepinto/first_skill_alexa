@@ -17,7 +17,7 @@ public class LaunchRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Sim, estou!";
+        String speechText = "Olá, hoje vamos jogar um pouco?!";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("Hello", speechText)

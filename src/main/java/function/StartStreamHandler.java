@@ -19,7 +19,9 @@ public class StartStreamHandler extends SkillStreamHandler {
                         new EasterEggsIntentHandler(),
                         new JobVacanciesIntentHandler(),
                         new AboutIntentHandler(),
-                        new FirstIntentHandler())
+                        new FirstIntentHandler(),
+                        new AskGameIntentHandler(),
+                        new StoreGamersHandler())
                 .build();
     }
 

@@ -11,7 +11,7 @@ public class StoreGamersHandler implements RequestHandler {
     @Override
     public boolean canHandle(HandlerInput input) {
         //TODO Criar Intet dentro console developer Amazon
-        return input.matches(Predicates.intentName("AskGameIntent"));
+        return input.matches(Predicates.intentName("StoreGamers"));
     }
 
     @Override
