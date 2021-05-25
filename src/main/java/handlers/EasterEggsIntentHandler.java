@@ -15,12 +15,12 @@ public class EasterEggsIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "é um professor <lang xml:lang=\"en-US\">Home at teacher.</lang>" +
+        String speechText = "Minhas piadas são de peso, pois eu sou programada em Java." +
                 "<audio src=\"soundbank://soundlibrary/voices/human/human_09\"/>";
 
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("HelloWorld", speechText)
+                .withShouldEndSession(true)
                 .build();
     }
 }
