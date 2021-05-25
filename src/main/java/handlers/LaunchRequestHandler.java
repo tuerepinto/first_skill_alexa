@@ -20,7 +20,7 @@ public class LaunchRequestHandler implements RequestHandler {
         String speechText = "<p>Olá, está buscando se atualizar?!</p>";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("Hello", speechText)
+                //.withSimpleCard("Hello", speechText)
                 .withReprompt(speechText)
                 .build();
     }

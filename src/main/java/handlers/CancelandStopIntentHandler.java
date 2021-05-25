@@ -18,8 +18,10 @@ public class CancelandStopIntentHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput input) {
         return input.getResponseBuilder()
-                .withSpeech("Tchau!")
-                .withSimpleCard("Goodbye", "Goodbye")
+                .withSpeech("<p>Tchau!</p>" +
+                        "Se dirigir não beba. Se for beber chame o Eta Nos Drinks!")
+                .withSimpleCard("Goodbye", "Se dirigir não beba.\r\n" +
+                        "Se for beber chame o Eta Nois Drinks.")
                 .withShouldEndSession(true)
                 .build();
     }

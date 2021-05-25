@@ -11,7 +11,7 @@ public class EtanosdrinksIntentHandler implements RequestHandler {
     @Override
     public boolean canHandle(HandlerInput input) {
         //TODO Criar Intet dentro console developer Amazon
-        return input.matches(Predicates.intentName("PodcastIntent"));
+        return input.matches(Predicates.intentName("EtanosdrinksIntent"));
     }
 
     @Override
@@ -24,11 +24,11 @@ public class EtanosdrinksIntentHandler implements RequestHandler {
                 "seguem os protocolos contra COVID-19 </p>" +
                 "<p>Quer saber mais? Faz aquele zap zap para o número (31) 9 9 1 5 8-3 4 0 4</p>";
 
-        String screenText = "Instagran: @etanoisdrinks\r\nWhatsapp: (31) 99158-3404";
+        String screenText = "Instagram: @etanoisdrinks\r\nWhatsapp: (31)99158-3404";
 
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("PodProgramar", screenText)
+                .withSimpleCard("Eta Nois Drink", screenText)
                 .withShouldEndSession(false)
                 .build();
     }
