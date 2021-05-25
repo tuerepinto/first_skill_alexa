@@ -8,16 +8,18 @@ import com.amazon.ask.request.Predicates;
 
 import java.util.Optional;
 
-public class LaunchRequestHandler implements RequestHandler {
+import static com.amazon.ask.request.Predicates.intentName;
+
+public class CodeReviewRequestHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(Predicates.requestType(LaunchRequest.class));
+        return input.matches(intentName("CodeReviewIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "<p>Olá, Boa noite.Já é para dizer <lang xml:lang=\"en-US\">Hello world</lang>?!</p>";
+        String speechText = "<p>Isso aí é para matar gente!</p>";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 //.withSimpleCard("Hello", speechText)
