@@ -105,6 +105,14 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/12206-codestream
 .idea/codestream.xml
 
+# Maven Libraries
+# https://plugins.jetbrains.com/plugin/12206-codestream
+.idea/libraries
+
+# Maven All
+# https://plugins.jetbrains.com/plugin/12206-codestream
+.idea/*
+
 ### Java ###
 # Compiled class file
 *.class
