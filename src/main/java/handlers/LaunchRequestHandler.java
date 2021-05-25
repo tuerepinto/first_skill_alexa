@@ -8,6 +8,9 @@ import com.amazon.ask.request.Predicates;
 
 import java.util.Optional;
 
+import static constant.WordingConstant.TEXT_FIST_HELLO;
+
+//Start request action
 public class LaunchRequestHandler implements RequestHandler {
 
     @Override
@@ -17,11 +20,10 @@ public class LaunchRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Welcome to the Alexa Skills Kit, you can say hello";
         return input.getResponseBuilder()
-                .withSpeech(speechText)
-                .withSimpleCard("HelloWorld", speechText)
-                .withReprompt(speechText)
+                .withSpeech(TEXT_FIST_HELLO)
+                .withSimpleCard("HelloWorld", TEXT_FIST_HELLO)
+                .withReprompt(TEXT_FIST_HELLO)
                 .build();
     }
 
